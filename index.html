@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>3rdSystem Software</title>
-    <!-- <link rel="icon" type="image/png" href="path_to_your_favicon.png"/> -->
+    <!-- <link rel="icon" type="image/png" href="favicon.png"/> -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,17 +30,33 @@
             color: #262626;
         }
 
-        a {
+        a, a:visited {
             color: #213f20;
+            text-decoration: none;
         }
 
-        p {
-            color: #595959;
+        a:hover {
+            color: #262626;
+        }
+
+        .contact {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        .copyright {
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #6D6D6D;
         }
 
         @media (max-width: 600px) {
             h1 {
                 font-size: 1.5em;
+            }
+
+            .contact {
+                font-size: 1em;
             }
         }
     </style>
@@ -50,8 +66,8 @@
         <img src="3S-LOGO.png" alt="Company Logo" style="max-width: 50%; height: auto;">
         <h1>Coming soon...</h1>
         <p><i>Balance between knowledge and experience</i></p>
-        <p>Contact us at: <a href = "mailto: info@3rdsystem.com">info@3rdsystem.com</a></p>
-        <p>&copy; 2024 Third System</p>
+        <p class="contact">Contact us at: <a href="mailto:info@3rdsystem.com">info@3rdsystem.com</a></p>
+        <p class="copyright">&copy; 2024 Third System</p>
     </div>
 </body>
 </html>
